@@ -1,0 +1,2 @@
+This is called the object factory. And essentially what it (movie.js) is an object
+that is responsible for creating other objects.
