@@ -13,9 +13,9 @@
 
 
 <ul>
-    <% for(var i = 0; i < 5; i++) { %>
-    <li>Tuna</li>
-    <% } %>
+    <% videoData2.categories.forEach(function(item) { %>
+        <li><%= item.categoryName %></li>
+    <% }); %>
 </ul>
 </body>
 </html>
