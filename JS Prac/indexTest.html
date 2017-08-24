@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <p id="demo"></p>
+</body>
+<script>
+    var txt = "Please locate where 'locate' occurs!";
+    var result1 = txt.indexOf('locate', 15);
+    var result2 = txt.indexOf('locate');
+    var result3 = txt.lastIndexOf('locate');
+
+    document.getElementById("demo").innerHTML = result1 + "</br>" + result2 + "</br>" + result3;
+</script>
+</html>
