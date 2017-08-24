@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<span onmouseover="this.style.color='green'", onmouseout="this.style.color='black'">Mouse over me!</span><br/>
+
+<p id="demo">something</p></br>
+<button onclick="lll()">Hit Me</button>
+
+
+<script>
+	var testObj = {name: "Oscar", age: "22", performance: "good"};
+	var hideSth = document.getElementById("demo");
+	hideSth.style.visibility = "hidden";
+	var tag = 1;
+
+	function lll(){
+		switch (tag) {
+			case 1:
+				document.getElementById("demo").innerHTML = testObj.performance;
+				hideSth.style.visibility = "visible";
+				tag = 2;
+				break;
+			case 2:
+				hideSth.style.visibility = "hidden";
+				tag = 1;
+				break;
+		}
+
+		
+	}
+</script>
+
+</body>
+</html>
